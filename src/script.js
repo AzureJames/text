@@ -33,7 +33,7 @@ const cube = new THREE.Mesh(
 /*font*/
 // const fontLoader = new THREE.FontLoader();
 const loader = new FontLoader;
-loader.load('./droid_sans_bold.typeface.json', (font)=>{
+loader.load('droid_sans_bold.typeface.json', (font)=>{
     const textGeometry = new TextGeometry(
         'Droid Bold Font',
         {
@@ -56,7 +56,7 @@ loader.load('./droid_sans_bold.typeface.json', (font)=>{
     scene.add(text)
 })
 
-loader.load('./helvetiker_regular.typeface.json', (font)=>{
+loader.load('helvetiker_regular.typeface.json', (font)=>{
     const textGeometry2 = new TextGeometry(
         'Helvetiker Font',
         {
