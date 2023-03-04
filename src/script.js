@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'lil-gui'
-import droidTypeface from '../node_modules/three/examples/fonts/droid/droid_sans_bold.typeface.json'
+// import droidTypeface from '../node_modules/three/examples/fonts/droid/droid_sans_bold.typeface.json'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 
@@ -33,7 +33,7 @@ const cube = new THREE.Mesh(
 /*font*/
 // const fontLoader = new THREE.FontLoader();
 const loader = new FontLoader;
-loader.load('./fonts/droid_sans_bold.typeface.json', (font)=>{
+loader.load('./droid_sans_bold.typeface.json', (font)=>{
     const textGeometry = new TextGeometry(
         'Droid Bold Font',
         {
@@ -56,7 +56,7 @@ loader.load('./fonts/droid_sans_bold.typeface.json', (font)=>{
     scene.add(text)
 })
 
-loader.load('./fonts/helvetiker_regular.typeface.json', (font)=>{
+loader.load('./helvetiker_regular.typeface.json', (font)=>{
     const textGeometry2 = new TextGeometry(
         'Helvetiker Font',
         {
